@@ -13,7 +13,7 @@ ohne langwierige Erklärungen.
 Inhaltsverzeichnis:
 
 [Textbasierte Quiz-Spiele](https://python4kids-ba.github.io/Python4kids/pages/textbasierte_quizspiele.html)
-[Grafiken zeichen](https://python4kids-ba.github.io/Python4kids/pages/grafiken_zeichnen.html)
+[Grafiken zeichen](https://python4kids-ba.github.io/Python4kids/pages/grafiken_zeichnen.md)
 [Arcadenspiele](https://python4kids-ba.github.io/Python4kids/pages/arcadenspiele.html)
 [Spiele erweitern und verbessern](https://python4kids-ba.github.io/Python4kids/pages/spiele_erweitern.html)
 [Mehr Erweiterungen](https://python4kids-ba.github.io/Python4kids/pages/mehr_erweiterungen.html)
