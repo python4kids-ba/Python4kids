@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Minecraft - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true" style=""><h1 id="Minecraft" data-id="Minecraft"><a class="anchor hidden-xs" href="#Minecraft" title="Minecraft"><span class="octicon octicon-link"></span></a><span>Minecraft</span></h1><p><span>Die Minecraft Python library wurde von David Whale und Martin O’Hanlon entwickelt. Ihr Buch </span><em><span>Adventures in Minecraft</span></em><span> enthält noch eine Reihe weiterer Programme.</span></p><h2 id="Setup" data-id="Setup"><a class="anchor hidden-xs" href="#Setup" title="Setup"><span class="octicon octicon-link"></span></a><span>Setup</span></h2><p><span>Du brauchst Minecraft </span><strong><span>Java Edition</span></strong><span>.  </span><a href="https://my.minecraft.net/en-us/store/minecraft/" target="_blank" rel="noopener"><span>https://my.minecraft.net/en-us/store/minecraft/)</span></a></p><p><span>Wenn du bereits einen Mojang Account hast, klicke auf Login. Solltest du ihn schon seit mehreren Jahren nicht mehr benutzt haben, kann es sein, dass du dein Passwort ändern musst. Es sagt dir, ob du bereits Minecraft besitzt. Wenn du keinen Mojang Account hast, dann registriere dich und kaufe die Minecraft Java Edition.</span></p><h3 id="Setup-Java" data-id="Setup-Java"><a class="anchor hidden-xs" href="#Setup-Java" title="Setup-Java"><span class="octicon octicon-link"></span></a><span>Setup Java</span></h3><p><span>Du musst Java Runtime Environment Version 8 installieren.</span></p><p><span>Download für Windows: </span><a href="https://github.com/frekele/oracle-java/releases/download/8u212-b10/jre-8u212-windows-x64.exe" target="_blank" rel="noopener"><span>https://github.com/frekele/oracle-java/releases/download/8u212-b10/jre-8u212-windows-x64.exe</span></a></p><p><span>Download für Mac: </span><a href="https://github.com/frekele/oracle-java/releases/download/8u212-b10/jre-8u212-macosx-x64.dmg" target="_blank" rel="noopener"><span>https://github.com/frekele/oracle-java/releases/download/8u212-b10/jre-8u212-macosx-x64.dmg</span></a></p><h3 id="Setup-Server" data-id="Setup-Server"><a class="anchor hidden-xs" href="#Setup-Server" title="Setup-Server"><span class="octicon octicon-link"></span></a><span>Setup Server</span></h3><p><span>Lade das Adventures In Minecraft Starter Kit von</span></p><p><a href="https://adventuresinminecraft.github.io/" target="_blank" rel="noopener"><span>https://adventuresinminecraft.github.io/</span></a><span> runter und entpacke es in einen Ordner auf deinem Desktop. Auf der Seite gibt es Videos, die erklären, wie man einen Server vorbereitet.</span></p><p><span>Ich empfehle vor dem ersten Start des Servers, die </span><em><span>Server/server.properties</span></em><span> Datei zu bearbeiten (nutze Notepad oder </span><a href="https://www.sublimetext.com/" target="_blank" rel="noopener"><span>SublimeText</span></a><span>) und ändere</span></p><pre><code>level-type=flat
+</code></pre><p><span>um eine flache Welt zu generieren. (Die Entscheidung liegt dabei aber ganz bei dir!)</span></p><p><span>Um den Server zu starten, doppelklicke auf die </span><em><span>StartServer</span></em><span> Datei. Das öffnet ein Fenster für die Serverkonsole und will, dass du die Leertaste (Space) drückst.</span></p><p><span>Wenn du später eine andere Welt generieren möchtest, ändere</span></p><pre><code>level-name=world2
+</code></pre><p><span>und starte den Server nochmal.</span></p><p><span>Wenn der Server läuft ist es zu empfehlen, die Nacht erstmal zu deaktivieren. Dafür tippst du das folgende in die Serverkonsole:</span></p><pre><code>gamerule doDaylightCycle false
+time set day
+</code></pre><p><span>Du musst das Fenster für die Serverkonsole </span><strong><span>immer</span></strong><span> offen halten. Wenn du aufhören willst, tippe erst</span></p><pre><code>stop
+</code></pre><p><span>in die Konsole, damit es deine Welt speichert.</span></p><h3 id="Setup-Minecraft" data-id="Setup-Minecraft"><a class="anchor hidden-xs" href="#Setup-Minecraft" title="Setup-Minecraft"><span class="octicon octicon-link"></span></a><span>Setup Minecraft</span></h3><p><span>Führe den Minecraft Launcher, den du von </span><a href="http://minecraft.net" target="_blank" rel="noopener"><span>minecraft.net</span></a><span> runtergeladen hast, aus. Wir werden nicht die Standard-Version nutzen, sondern </span><strong><span>version 1.12</span></strong><span>.</span></p><p><span>Klicke </span><em><span>launch options</span></em><span> dann </span><em><span>add new</span></em><span>, setze die Version auf </span><em><span>release 1.12</span></em><span>, klicke </span><em><span>save</span></em><span>. Anschließend klickst du oben auf </span><em><span>Minecraft</span></em><span>. Klicke den Pfeil neben </span><em><span>Play</span></em><span> und wähle </span><em><span>1.12</span></em><span>. Dann klicke auf </span><em><span>Play</span></em><span>.</span></p><p><span>Minecraft läuft. Klicke ‘multiplayer’, dann ‘add server’. Füge die Serveradresse ein:</span></p><pre><code>localhost
+</code></pre><p><span>Klicke ‘done’ und dann auf deinen Server, um dich mit ihm zu verbinden.</span></p><h3 id="Setup-Mu" data-id="Setup-Mu"><a class="anchor hidden-xs" href="#Setup-Mu" title="Setup-Mu"><span class="octicon octicon-link"></span></a><span>Setup Mu</span></h3><p><span>Mu ist der Python Editor, den wir bereits verwendet haben, daher sollte er schon installiert sein. Doch du musst auf Nummer sicher gehen, dass du die aktuellste </span><em><span>alpha version 1.1</span></em><span> installiert hast, nicht die Standard 1.0 Version.</span><br>
+<span>Du kannst es von </span><a href="https://codewith.mu/en/download" target="_blank" rel="noopener"><span>https://codewith.mu/en/download</span></a><span> runterladen.</span></p><p><span>Führe Mu aus. Klicke </span><em><span>Modus</span></em><span> und wähle </span><em><span>Python3</span></em><span>.</span></p><p><span>Klicke auf das kleine Zahnrad-Icon am unteren rechten Rand und wähle ‘Third Party Packages’. Tippe</span></p><pre><code>mcpi
+</code></pre><p><span>in die Box und downloade die Bibliothek.</span></p><p><span>Wenn du einen anderen Editor benutzt, kannst du mcpi mit folgender Befehlszeile installieren:</span></p><pre><code>pip3 install mcpi
+</code></pre><h2 id="Hallo-Minecraft" data-id="Hallo-Minecraft"><a class="anchor hidden-xs" href="#Hallo-Minecraft" title="Hallo-Minecraft"><span class="octicon octicon-link"></span></a><span>Hallo Minecraft</span></h2><p><span>Dieses Porgramm testet, ob du eine Verbindung zum Minecraft Server hast und zeigt eine Nachricht an.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+mc = Minecraft.create()
+mc.postToChat(<span class="hljs-string">"Hello Minecraft World"</span>)
+</div></div></code></pre><h2 id="Koordinaten" data-id="Koordinaten"><a class="anchor hidden-xs" href="#Koordinaten" title="Koordinaten"><span class="octicon octicon-link"></span></a><span>Koordinaten</span></h2><p><span>Dieses Programm ruft die Spielerkoordinaten ab und gibt sie aus:</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">import</span> time
+
+mc = Minecraft.create()
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:     <span class="hljs-comment"># die Schleife sorgt dafür, dass das Spiel für immer läuft</span>
+    time.sleep(<span class="hljs-number">1</span>)
+    pos = mc.player.getTilePos()
+    print(pos)
+    mc.postToChat(pos)
+</div></div></code></pre><h2 id="Ändern-der-Spielerposition" data-id="Ändern-der-Spielerposition"><a class="anchor hidden-xs" href="#Ändern-der-Spielerposition" title="Ändern-der-Spielerposition"><span class="octicon octicon-link"></span></a><span>Ändern der Spielerposition</span></h2><p><span>Finde die Koordinaten eines Ortes in deiner Welt, entweder indem du im Spiel F3 drückst oder das obige Programm laufen lässt. Füge diese Koordinaten in das folgende Programm ein und führe es aus, um zu diesem Ort zu teleportieren.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+
+<span class="hljs-comment"># ändere diese wohin du willst</span>
+x = <span class="hljs-number">10</span>
+y = <span class="hljs-number">11</span>
+z = <span class="hljs-number">12</span>
+
+mc.player.setTilePos(x, y, z)
+</div></div></code></pre><h2 id="Baue-einen-Teleporter" data-id="Baue-einen-Teleporter"><a class="anchor hidden-xs" href="#Baue-einen-Teleporter" title="Baue-einen-Teleporter"><span class="octicon octicon-link"></span></a><span>Baue einen Teleporter</span></h2><p><span>Bevor du dieses Programm ausführst, baue zwei Tiles in deinem Spiel, die als Teleporter dienen sollen und schreibe ihre Koordinaten auf.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+
+<span class="hljs-comment"># Ändere diese Zahlen zu den Koordinaten deiner Teleporter</span>
+
+teleporter_x = <span class="hljs-number">742</span>
+teleporter_z = <span class="hljs-number">955</span>
+
+destination_x = <span class="hljs-number">735</span>
+destination_z = <span class="hljs-number">956</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    <span class="hljs-comment"># Spielerposition</span>
+    pos = mc.player.getTilePos()
+    print(pos)
+
+    <span class="hljs-comment"># Prüfe, ob der Spieler auf dem Teleporter steht</span>
+    <span class="hljs-keyword">if</span> pos.x == teleporter_x <span class="hljs-keyword">and</span> pos.z == teleporter_z:
+        mc.postToChat(<span class="hljs-string">"teleport!"</span>)
+        pos.x = destination_x
+        pos.z = destination_z
+        mc.player.setTilePos(pos)
+</div></div></code></pre><h3 id="Übungsaufgabe" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe" title="Übungsaufgabe"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Füge diese Zeile ans Ende des Programms:</span><pre><code class="python hljs">time.sleep(<span class="hljs-number">5</span>)
+</code></pre>
+</li>
+<li><span>Füge eine weitere Zeile ein, die den Spieler woanders hin teleportiert.</span></li>
+</ul><h2 id="Teleportiere-den-Spieler-in-die-Luft" data-id="Teleportiere-den-Spieler-in-die-Luft"><a class="anchor hidden-xs" href="#Teleportiere-den-Spieler-in-die-Luft" title="Teleportiere-den-Spieler-in-die-Luft"><span class="octicon octicon-link"></span></a><span>Teleportiere den Spieler in die Luft</span></h2><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+
+<span class="hljs-comment"># Ändere diese Zahlen zu den Koordinaten deiner Teleporter</span>
+
+teleporter_x = <span class="hljs-number">9</span>
+teleporter_z = <span class="hljs-number">12</span>
+
+height = <span class="hljs-number">30</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    pos = mc.player.getTilePos()
+
+    <span class="hljs-comment"># Prüfe, ob der Spieler auf dem Teleporter steht</span>
+    <span class="hljs-keyword">if</span> pos.x == teleporter_x <span class="hljs-keyword">and</span> pos.z == teleporter_z:
+        mc.postToChat(<span class="hljs-string">"teleport!"</span>)
+        pos.y += height  <span class="hljs-comment"># in der Luft</span>
+        pos.x += <span class="hljs-number">1</span>  
+        mc.player.setTilePos(pos)
+</div></div></code></pre><h2 id="Teleportationssprung" data-id="Teleportationssprung"><a class="anchor hidden-xs" href="#Teleportationssprung" title="Teleportationssprung"><span class="octicon octicon-link"></span></a><span>Teleportationssprung</span></h2><p><span>Dieses Porgramm führt eine Reihe an schnellen Teleportionen aus, um den Eindruck eines Sprungs zu erwecken.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">import</span> time
+
+mc = Minecraft.create()
+
+<span class="hljs-comment"># Ändere diese Zahlen zu den Koordinaten deiner Teleporter</span>
+
+teleporter_x = <span class="hljs-number">9</span>
+teleporter_z = <span class="hljs-number">12</span>
+
+height = <span class="hljs-number">20</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    pos = mc.player.getTilePos()
+
+    <span class="hljs-keyword">if</span> pos.x == teleporter_x <span class="hljs-keyword">and</span> pos.z == teleporter_z:
+        mc.postToChat(<span class="hljs-string">"teleport!"</span>)
+        <span class="hljs-comment"># bewege dich vom Teleporter, damit wir nicht wieder drauf landen</span>
+        pos.x += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, height):
+            pos.y += <span class="hljs-number">1</span>  <span class="hljs-comment"># eine kleine Bewegung nach oben</span>
+            time.sleep(<span class="hljs-number">0.1</span>) <span class="hljs-comment"># kurze Verzögerung von 0,2 Sekunden</span>
+            mc.player.setTilePos(pos)
+</div></div></code></pre><h3 id="Übungsaufgabe1" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe1" title="Übungsaufgabe1"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Ändere die Höhe des Sprungs.</span></li>
+<li><span>Mach den Sprung schneller.</span></li>
+<li><span>Bewege den Spieler sowohl in die X und Z Richtung, als auch die Y Richtung, während des Sprungs.</span></li>
+<li><span>(Für Fortgerschrittene):</span><br>
+<span>Anstatt zu prüfen, ob der Spieler auf einem Teleporter Tile steht, prüfen wir, ob er innerhalb eines bestimmten Bereichs ist. Benutze </span><code>&lt;</code><span>, </span><code>and</code><span>, </span><code>&gt;</code><span> Operatoren.</span></li>
+</ul><h2 id="Erschaffe-einen-Block" data-id="Erschaffe-einen-Block"><a class="anchor hidden-xs" href="#Erschaffe-einen-Block" title="Erschaffe-einen-Block"><span class="octicon octicon-link"></span></a><span>Erschaffe einen Block</span></h2><p><span>Dieses Programm erschafft einen Block. Jede Art von Block hat seine eigene Nummer, aber wenn wir </span><code>mcpi.block</code><span> importieren, können wir Namen verwenden und müssen uns keine Nummern merken.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> mcpi.block <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+pos = mc.player.getTilePos()
+x = pos.x
+y = pos.y
+z = pos.z
+blocktype = <span class="hljs-number">1</span>
+mc.setBlock(x, y, z, blocktype)
+</div></div></code></pre><h3 id="Übungsaufgabe2" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe2" title="Übungsaufgabe2"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Lass den Block in kurzer Distanz vom Spieler erscheinen.</span></li>
+</ul><h2 id="Blockarten" data-id="Blockarten"><a class="anchor hidden-xs" href="#Blockarten" title="Blockarten"><span class="octicon octicon-link"></span></a><span>Blockarten</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>AIR</span></td>
+<td><span>BED</span></td>
+<td><span>BEDROCK</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>BEDROCK_INVISIBLE</span></td>
+<td><span>BOOKSHELF</span></td>
+<td><span>BRICK_BLOCK</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>CACTUS</span></td>
+<td><span>CHEST</span></td>
+<td><span>CLAY</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>COAL_ORE</span></td>
+<td><span>COBBLESTONE</span></td>
+<td><span>COBWEB</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>CRAFTING_TABLE</span></td>
+<td><span>DIAMOND_BLOCK</span></td>
+<td><span>DIAMOND_ORE</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>DIRT</span></td>
+<td><span>DOOR_IRON</span></td>
+<td><span>DOOR_WOOD</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>FARMLAND</span></td>
+<td><span>FENCE</span></td>
+<td><span>FENCE_GATE</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>FIRE</span></td>
+<td><span>FLOWER_CYAN</span></td>
+<td><span>FLOWER_YELLOW</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>FURNACE_ACTIVE</span></td>
+<td><span>FURNACE_INACTIVE</span></td>
+<td><span>GLASS</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>GLASS_PANE</span></td>
+<td><span>GLOWSTONE_BLOCK</span></td>
+<td><span>GOLD_BLOCK</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>GOLD_ORE</span></td>
+<td><span>GRASS</span></td>
+<td><span>GRASS_TALL</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>GRAVEL</span></td>
+<td><span>ICE</span></td>
+<td><span>IRON_BLOCK</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>IRON_ORE</span></td>
+<td><span>LADDER</span></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>LAPIS_LAZULI_ORE</span></td>
+<td><span>LAVA</span></td>
+<td><span>LAVA_FLOWING</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>LAVA_STATIONARY</span></td>
+<td><span>LEAVES</span></td>
+<td><span>MELON</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>MOSS_STONE</span></td>
+<td><span>MUSHROOM_BROWN</span></td>
+<td><span>MUSHROOM_RED</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>OBSIDIAN</span></td>
+<td><span>REDSTONE_ORE</span></td>
+<td><span>SAND</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>SANDSTONE</span></td>
+<td><span>SAPLING</span></td>
+<td><span>SNOW</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>SNOW_BLOCK</span></td>
+<td><span>STAIRS_COBBLESTONE</span></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>STAIRS_WOOD</span></td>
+<td><span>STONE</span></td>
+<td><span>STONE_BRICK</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>STONE_SLAB</span></td>
+<td><span>STONE_SLAB_DOUBLE</span></td>
+<td><span>SUGAR_CANE</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>TNT</span></td>
+<td><span>TORCH</span></td>
+<td><span>WATER</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>WATER_FLOWING</span></td>
+<td><span>WATER_STATIONARY</span></td>
+<td><span>WOOD</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>WOOD_PLANKS</span></td>
+<td><span>LAPIS_LAZULI_BLOCK</span></td>
+<td><span>WOOL</span></td>
+</tr>
+</tbody>
+</table><h2 id="Erschaffe-einen-Block-innerhalb-einer-Schleife" data-id="Erschaffe-einen-Block-innerhalb-einer-Schleife"><a class="anchor hidden-xs" href="#Erschaffe-einen-Block-innerhalb-einer-Schleife" title="Erschaffe-einen-Block-innerhalb-einer-Schleife"><span class="octicon octicon-link"></span></a><span>Erschaffe einen Block innerhalb einer Schleife</span></h2><p><span>Dieses Programm erschafft immer wieder einen Block innerhalb der Schleife. Bewege dich, um es zu sehen.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> mcpi.block <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    pos = mc.player.getTilePos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
+    blocktype = WOOL
+    mc.setBlock(x, y, z, blocktype)
+
+</div></div></code></pre><h3 id="Übungsaufgabe3" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe3" title="Übungsaufgabe3"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Lass der Block einen Meter </span><strong><span>unter</span></strong><span> dem Spieler erscheinen.</span></li>
+<li><span>Ändere den Block in etwas anderes, z.B. </span><code>ICE</code></li>
+</ul><h2 id="Baue-einen-Turm-aus-Blöcken" data-id="Baue-einen-Turm-aus-Blöcken"><a class="anchor hidden-xs" href="#Baue-einen-Turm-aus-Blöcken" title="Baue-einen-Turm-aus-Blöcken"><span class="octicon octicon-link"></span></a><span>Baue einen Turm aus Blöcken</span></h2><p><span>Wir nutzen eine </span><code>for</code><span> Schleife um einen Turm aus Blöcken zu bauen.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+pos = mc.player.getTilePos()
+x = pos.x + <span class="hljs-number">3</span>
+y = pos.y
+z = pos.z
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+    mc.setBlock(x, y + i, z, <span class="hljs-number">1</span>)
+</div></div></code></pre><h3 id="Übungsaufgabe4" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe4" title="Übungsaufgabe4"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Wie hoch kannst du den Turm machen?</span></li>
+<li><span>Ändere das Programm und baue 3 Türme nebeneinander.</span></li>
+</ul><h2 id="Aufräumen" data-id="Aufräumen"><a class="anchor hidden-xs" href="#Aufräumen" title="Aufräumen"><span class="octicon octicon-link"></span></a><span>Aufräumen</span></h2><p><span>Die </span><code>setBlocks()</code><span> Funktion lässt uns einen großen Würfel an Blöcken schaffen. Wennw ir Blöcke des Typs </span><code>AIR</code><span> erschaffen, hat das den Effekt alle Blöcke zu entfernen! Das ist so praktisch, dass wir es in der Zukunft noch benötigen werden, daher packen wir den Code dafür in eine Funktion. Speichere das Programm als </span><code>clear_space.py</code><span>, damit du es im nächsten Programm importieren kannst.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> mcpi.block <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_space</span><span class="hljs-params">(mc, size)</span>:</span>
+    pos = mc.player.getTilePos()
+    mc.setBlocks(pos.x-size, pos.y, pos.z-size, pos.x+size, pos.y+size, pos.z+size,
+                 AIR)
+
+mc = Minecraft.create()
+
+clear_space(mc, <span class="hljs-number">10</span>)
+</div></div></code></pre><h2 id="Baue-ein-Haus" data-id="Baue-ein-Haus"><a class="anchor hidden-xs" href="#Baue-ein-Haus" title="Baue-ein-Haus"><span class="octicon octicon-link"></span></a><span>Baue ein Haus</span></h2><p><span>Speichere dieses Programm als </span><code>house.py</code><span>.</span><br>
+<span>Stelle sicher, dass du das vorherige Programm im selben Ordner gespeichert hast, bevor du es ausführst, da wir die Funktion von </span><code>clear_space.py</code><span> importieren.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> mcpi.block <span class="hljs-keyword">import</span> *
+
+<span class="hljs-comment"># Hier MUSS der Name des Aufräum-Programms stehen!</span>
+<span class="hljs-keyword">from</span> clear_space <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">make_house</span><span class="hljs-params">(mc, x, y, z, width, height, length)</span>:</span>
+    mc.setBlocks(x, y, z, x + width, y + height, z + length, STONE)
+
+    <span class="hljs-comment"># Was passiert, wenn wir AIR innerhalb des Würfels machen?</span>
+    mc.setBlocks(x + <span class="hljs-number">1</span>, y + <span class="hljs-number">1</span>, z + <span class="hljs-number">1</span>,
+                 x + width - <span class="hljs-number">2</span>, y + height - <span class="hljs-number">2</span>, z + length - <span class="hljs-number">2</span>, AIR)
+
+mc = Minecraft.create()
+pos = mc.player.getPos()
+x = pos.x
+y = pos.y
+z = pos.z
+
+width = <span class="hljs-number">10</span>
+height = <span class="hljs-number">50</span>
+length = <span class="hljs-number">60</span>
+
+<span class="hljs-comment"># Nutze die Funktion des anderen Programms</span>
+clear_space(mc, <span class="hljs-number">10</span>)
+make_house(mc, x, y, z, width, height, length)
+</div></div></code></pre><h3 id="Übungsaufgabe5" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe5" title="Übungsaufgabe5"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Führe das Programm aus und schlage ein Loch in die Wand, um zu sehen, was drinnen ist und damit du einen Weg ins Haus hast.</span></li>
+<li><span>Ändere das Programm, damit es </span><em><span>automatisch</span></em><span> ein Loch für eine Tür macht.</span></li>
+<li><span>Senke den Boden im Haus ab.</span></li>
+<li><span>Füge ein paar Möbel, Fackeln und Fenster hinzu.</span></li>
+<li><span>(Für Fortgeschrittene):</span><br>
+<span>Lass die Fenster größer werden, wenn du dein Haus vergrößerst.</span></li>
+<li><span>Versuche dein Haus mit </span><code>LAVA</code><span>, </span><code>WATER</code><span>, oder </span><code>TNT</code><span> zu füllen (Sei vorsichtig mit </span><code>TNT</code><span>, zu viel lässt deinen Computer abstürzen!)</span></li>
+</ul><h2 id="Bau-eine-Straße-mit-Häusern" data-id="Bau-eine-Straße-mit-Häusern"><a class="anchor hidden-xs" href="#Bau-eine-Straße-mit-Häusern" title="Bau-eine-Straße-mit-Häusern"><span class="octicon octicon-link"></span></a><span>Bau eine Straße mit Häusern</span></h2><p><span>Da wir wieder eine Funktion importieren, ist es wichtig, das alles im selben Verzeichnis gespeichert wurde.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> mcpi.block <span class="hljs-keyword">import</span> *
+
+<span class="hljs-comment"># Hier MUSS der Name des Aufräum-Programms stehen!</span>
+<span class="hljs-keyword">from</span> clear_space <span class="hljs-keyword">import</span> *
+<span class="hljs-comment"># Hier MUSS der Name des Haus-Programms stehen!</span>
+<span class="hljs-keyword">from</span> house <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+pos = mc.player.getTilePos()
+
+x = pos.x
+y = pos.y
+z = pos.z
+
+width = <span class="hljs-number">10</span>
+height = <span class="hljs-number">5</span>
+length = <span class="hljs-number">6</span>
+
+clear_space(mc, <span class="hljs-number">100</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>, <span class="hljs-number">20</span>):
+    print(x+i, y, z)
+    make_house(mc, x+i, y, z, width, height, length)
+</div></div></code></pre><h3 id="Übungsaufgaben" data-id="Übungsaufgaben"><a class="anchor hidden-xs" href="#Übungsaufgaben" title="Übungsaufgaben"><span class="octicon octicon-link"></span></a><span>Übungsaufgaben</span></h3><ul>
+<li><span>Wie viele Häuser gibt es? Mach die Straße länger mit mehr Häusern.</span></li>
+<li><span>Lass die Häuser größer werden je länger die Straße ist.</span></li>
+<li><span>Baue ein paar Türme an die Straße.</span></li>
+<li><span>(Für Fortgeschrittene):</span><br>
+<span>Schreib eine Schleife in die Schleife, um mehrere Straßen zu schaffen.</span></li>
+<li><span>(Für Fortgeschrittene):</span><br>
+<span>Baue Wege oder Zäune.</span></li>
+<li><span>Bau deine Häuser aus TNT. Benutze das flint Tool.</span></li>
+</ul><h2 id="Chatbefehle" data-id="Chatbefehle"><a class="anchor hidden-xs" href="#Chatbefehle" title="Chatbefehle"><span class="octicon octicon-link"></span></a><span>Chatbefehle</span></h2><p><span>Dieses Programm liest die Chatnachrichten der Spieler. Es baut einen Block neben jeden Spieler, der “build” sagt.</span><br>
+<span>Das ist das erste Beispiel, das für mehr als einen Spieler funktioniert.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+
+mc = Minecraft.create()
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    events = mc.events.pollChatPosts()
+    <span class="hljs-keyword">for</span> event <span class="hljs-keyword">in</span> events:
+        print(event)
+        <span class="hljs-keyword">if</span> event.message == <span class="hljs-string">"build"</span>:
+            id = event.entityId
+            pos = mc.entity.getTilePos(id)
+            x = pos.x
+            y = pos.y
+            z = pos.z
+            mc.setBlock(x, y, z, <span class="hljs-number">1</span>)
+            mc.postToChat(<span class="hljs-string">"done building!"</span>)
+</div></div></code></pre><h3 id="Übungsaufgabe6" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe6" title="Übungsaufgabe6"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>(Für Fortgeschrittene):</span><br>
+<span>Baue ein Haus um den Spielern, wenn er “house” sagt.</span></li>
+<li><span>(Für Fortgeschrittene):</span><br>
+<span>Baue eine Lavafalle, wenn der Spieler “trap” sagt.</span></li>
+<li><span>(Für Fortgeschrittene):</span><br>
+<span>Nutze </span><code>mc.getPlayerEntityId("fred")</code><span> um den Spieler namens Fred (oder wie auch immer dein Freund heißt) loszuwerden. Baue etwas an der Stelle dieses Spielers.</span></li>
+</ul><h2 id="Schildkröte" data-id="Schildkröte"><a class="anchor hidden-xs" href="#Schildkröte" title="Schildkröte"><span class="octicon octicon-link"></span></a><span>Schildkröte</span></h2><p><em><span>Hierfür wird das </span><code>minecraftstuff</code><span> Package benötigt.</span></em><br>
+<span>Du kannst es in Mu installieren, indem du unten rechts auf das Zahnrad klickst und </span><code>minecraftstuff</code><span> zur Liste der third party packages hinzufügst.</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code"><span class="hljs-keyword">from</span> mcpi.minecraft <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> mcpi.block <span class="hljs-keyword">import</span> *
+
+<span class="hljs-keyword">from</span> minecraftstuff <span class="hljs-keyword">import</span> MinecraftTurtle
+
+mc = Minecraft.create()
+pos = mc.player.getTilePos()
+pos.y += <span class="hljs-number">1</span>
+
+turtle = MinecraftTurtle(mc, pos)
+
+turtle.forward(<span class="hljs-number">5</span>)
+turtle.right(<span class="hljs-number">90</span>)
+turtle.forward(<span class="hljs-number">5</span>)
+turtle.right(<span class="hljs-number">90</span>)
+turtle.forward(<span class="hljs-number">5</span>)
+turtle.right(<span class="hljs-number">90</span>)
+turtle.forward(<span class="hljs-number">5</span>)
+</div></div></code></pre><h3 id="Übungsaufgabe7" data-id="Übungsaufgabe"><a class="anchor hidden-xs" href="#Übungsaufgabe7" title="Übungsaufgabe7"><span class="octicon octicon-link"></span></a><span>Übungsaufgabe</span></h3><ul>
+<li><span>Zeichne ein Dreieck, Hexagon, usw.</span></li>
+<li><span>Was machen turtle.up(90) und turtle.down(90)?</span></li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Minecraft" title="Minecraft">Minecraft</a><ul class="nav">
+<li><a href="#Setup" title="Setup">Setup</a><ul class="nav">
+<li><a href="#Setup-Java" title="Setup Java">Setup Java</a></li>
+<li><a href="#Setup-Server" title="Setup Server">Setup Server</a></li>
+<li><a href="#Setup-Minecraft" title="Setup Minecraft">Setup Minecraft</a></li>
+<li><a href="#Setup-Mu" title="Setup Mu">Setup Mu</a></li>
+</ul>
+</li>
+<li><a href="#Hallo-Minecraft" title="Hallo Minecraft">Hallo Minecraft</a></li>
+<li><a href="#Koordinaten" title="Koordinaten">Koordinaten</a></li>
+<li><a href="#Ändern-der-Spielerposition" title="Ändern der Spielerposition">Ändern der Spielerposition</a></li>
+<li><a href="#Baue-einen-Teleporter" title="Baue einen Teleporter">Baue einen Teleporter</a><ul class="nav">
+<li><a href="#Übungsaufgabe" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Teleportiere-den-Spieler-in-die-Luft" title="Teleportiere den Spieler in die Luft">Teleportiere den Spieler in die Luft</a></li>
+<li><a href="#Teleportationssprung" title="Teleportationssprung">Teleportationssprung</a><ul class="nav">
+<li><a href="#Übungsaufgabe1" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Erschaffe-einen-Block" title="Erschaffe einen Block">Erschaffe einen Block</a><ul class="nav">
+<li><a href="#Übungsaufgabe2" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Blockarten" title="Blockarten">Blockarten</a></li>
+<li><a href="#Erschaffe-einen-Block-innerhalb-einer-Schleife" title="Erschaffe einen Block innerhalb einer Schleife">Erschaffe einen Block innerhalb einer Schleife</a><ul class="nav">
+<li><a href="#Übungsaufgabe3" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Baue-einen-Turm-aus-Blöcken" title="Baue einen Turm aus Blöcken">Baue einen Turm aus Blöcken</a><ul class="nav">
+<li><a href="#Übungsaufgabe4" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Aufräumen" title="Aufräumen">Aufräumen</a></li>
+<li><a href="#Baue-ein-Haus" title="Baue ein Haus">Baue ein Haus</a><ul class="nav">
+<li><a href="#Übungsaufgabe5" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Bau-eine-Straße-mit-Häusern" title="Bau eine Straße mit Häusern">Bau eine Straße mit Häusern</a><ul class="nav">
+<li><a href="#Übungsaufgaben" title="Übungsaufgaben">Übungsaufgaben</a></li>
+</ul>
+</li>
+<li><a href="#Chatbefehle" title="Chatbefehle">Chatbefehle</a><ul class="nav">
+<li><a href="#Übungsaufgabe6" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Schildkröte" title="Schildkröte">Schildkröte</a><ul class="nav">
+<li><a href="#Übungsaufgabe7" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Minecraft" title="Minecraft">Minecraft</a><ul class="nav">
+<li><a href="#Setup" title="Setup">Setup</a><ul class="nav">
+<li><a href="#Setup-Java" title="Setup Java">Setup Java</a></li>
+<li><a href="#Setup-Server" title="Setup Server">Setup Server</a></li>
+<li><a href="#Setup-Minecraft" title="Setup Minecraft">Setup Minecraft</a></li>
+<li><a href="#Setup-Mu" title="Setup Mu">Setup Mu</a></li>
+</ul>
+</li>
+<li><a href="#Hallo-Minecraft" title="Hallo Minecraft">Hallo Minecraft</a></li>
+<li><a href="#Koordinaten" title="Koordinaten">Koordinaten</a></li>
+<li><a href="#Ändern-der-Spielerposition" title="Ändern der Spielerposition">Ändern der Spielerposition</a></li>
+<li><a href="#Baue-einen-Teleporter" title="Baue einen Teleporter">Baue einen Teleporter</a><ul class="nav">
+<li><a href="#Übungsaufgabe" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Teleportiere-den-Spieler-in-die-Luft" title="Teleportiere den Spieler in die Luft">Teleportiere den Spieler in die Luft</a></li>
+<li><a href="#Teleportationssprung" title="Teleportationssprung">Teleportationssprung</a><ul class="nav">
+<li><a href="#Übungsaufgabe1" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Erschaffe-einen-Block" title="Erschaffe einen Block">Erschaffe einen Block</a><ul class="nav">
+<li><a href="#Übungsaufgabe2" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Blockarten" title="Blockarten">Blockarten</a></li>
+<li><a href="#Erschaffe-einen-Block-innerhalb-einer-Schleife" title="Erschaffe einen Block innerhalb einer Schleife">Erschaffe einen Block innerhalb einer Schleife</a><ul class="nav">
+<li><a href="#Übungsaufgabe3" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Baue-einen-Turm-aus-Blöcken" title="Baue einen Turm aus Blöcken">Baue einen Turm aus Blöcken</a><ul class="nav">
+<li><a href="#Übungsaufgabe4" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Aufräumen" title="Aufräumen">Aufräumen</a></li>
+<li><a href="#Baue-ein-Haus" title="Baue ein Haus">Baue ein Haus</a><ul class="nav">
+<li><a href="#Übungsaufgabe5" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Bau-eine-Straße-mit-Häusern" title="Bau eine Straße mit Häusern">Bau eine Straße mit Häusern</a><ul class="nav">
+<li><a href="#Übungsaufgaben" title="Übungsaufgaben">Übungsaufgaben</a></li>
+</ul>
+</li>
+<li><a href="#Chatbefehle" title="Chatbefehle">Chatbefehle</a><ul class="nav">
+<li><a href="#Übungsaufgabe6" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+<li><a href="#Schildkröte" title="Schildkröte">Schildkröte</a><ul class="nav">
+<li><a href="#Übungsaufgabe7" title="Übungsaufgabe">Übungsaufgabe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
