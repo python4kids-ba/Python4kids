@@ -16,5 +16,5 @@
 <a href="https://python4kids-ba.github.io/Python4kids/pages/tutorial_verfolgungsjagd.html" target="_blank" rel="noopener"><span>Tutorial: Verfolgungsjagd</span></a><br>
 <a href="https://python4kids-ba.github.io/Python4kids/pages/tutorial_alienjagd.html" target="_blank" rel="noopener"><span>Tutorial: Alienjagd</span></a><br>
 <a href="https://python4kids-ba.github.io/Python4kids/pages/tutorial_tiere_fuettern.html" target="_blank" rel="noopener"><span>Tutorial: Tiere füttern</span></a><br>
-<a href="https://python4kids-ba.github.io/Python4kids/pages/minecraft.html" target="_blank" rel="noopener"><span>Minecraft</span></a></p></div>
+<a href="https://python4kids-ba.github.io/Python4kids/pages/minecraft.html" target="_blank" rel="noopener"><span>Minecraft</span></a>
 
