@@ -1,18 +1,6 @@
-## Simple site: Easy websites with GitHub pages
+Bei diesem Onlinebuch handelt es sich um eine Übersetzung des Buchs “Coding Games with Pygame Zero & Python” von Richard Smith und wurde im Rahmen einer Bachelorarbeit angefertigt.
+Neben der Übersetzung wurde das Buch an einigen Stellen erweitert und bietet drei zusätzliche Tutorials.
 
-[Github Pages](https://pages.github.com) provide a simple way to make a
-website using Markdown and git.
+Es soll Eltern, Lehrern und Leitern von CoderDojos dabei helfen, Kinder und Jugendliche auf spielerische Art an die Programmierung heranzuführen. Der Fokus liegt dabei hauptsächlich auf der Programmierung von Spielen ohne langatmige Erklärungen.
 
-This is a minimal tutorial to get started.
-
-View the thing [here](https://kbroman.org/simple_site).
-
----
-
-To the extent possible under law,
-[Karl Broman](https://github.com/kbroman)
-has waived all copyright and related or neighboring rights to
-&ldquo;[simple site](https://github.com/kbroman/simple_site)&rdquo;.
-This work is published from the United States.
-<br/>
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+[Das Original kann über Amazon bezogen werden.](https://www.amazon.de/Coding-Games-Pygame-Zero-Python/dp/1695028805/)
