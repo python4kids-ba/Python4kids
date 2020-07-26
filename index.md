@@ -1,5 +1,6 @@
 ## Coding Games with Pygame Zero & Python
 
+
 Bei diesem Onlinebuch handelt es sich um eine Übersetzung des Buchs "Coding Games with Pygame Zero & Python"
 von Richard Smith und wurde im Rahmen einer Bachelorarbeit angefertigt.
 Neben der Übersetzung wurde das Buch an einigen Stellen erweitert und bietet drei zusätzliche Tutorials. 
