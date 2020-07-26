@@ -17,7 +17,7 @@ ohne langwierige Erklärungen.
 
 Inhaltsverzeichnis:
 
-[Textbasierte Quiz-Spiele](https://python4kids-ba.github.io/pages/Textbasierte_QuizSpiele.html)
+[Textbasierte Quiz-Spiele](https://python4kids-ba.github.io/pages/textbasierte_quizspiele.html)
 [Grafiken zeichen](https://python4kids-ba.github.io/pages/grafiken_zeichnen.html)
 [Arcadenspiele](https://python4kids-ba.github.io/pages/arcadenspiele.html)
 [Spiele erweitern und verbessern](https://python4kids-ba.github.io/pages/spiele_erweitern.html)
@@ -30,4 +30,4 @@ Inhaltsverzeichnis:
 [Tutorial: Verfolgungsjagd](https://python4kids-ba.github.io/pages/tutorial_verfolgungsjagd.html)
 [Tutorial: Alienjagd](https://python4kids-ba.github.io/pages/tutorial_alienjagd.html)
 [Tutorial: Tiere füttern](https://python4kids-ba.github.io/pages/tutorial_tiere_fuettern.html)
-[Minecraft]: (https://python4kids-ba.github.io/pages/minecraft.html)
+[Minecraft](https://python4kids-ba.github.io/pages/minecraft.html)
