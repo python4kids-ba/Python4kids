@@ -17,7 +17,7 @@ ohne langwierige Erklärungen.
 
 Inhaltsverzeichnis:
 
-[Textbasierte Quiz-Spiele](https://python4kids-ba.github.io/pages/textbasierte_quizspiele.html)
+[Textbasierte Quiz-Spiele](https://Python4kids-ba.github.io/pages/textbasierte_quizspiele.html)
 [Grafiken zeichen](https://python4kids-ba.github.io/pages/grafiken_zeichnen.html)
 [Arcadenspiele](https://python4kids-ba.github.io/pages/arcadenspiele.html)
 [Spiele erweitern und verbessern](https://python4kids-ba.github.io/pages/spiele_erweitern.html)
